@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardCornerRadius="15dp"
+    android:elevation="10dp"
+    android:layout_marginHorizontal="16px"
+    android:layout_marginTop="8dp"
+    >
+//Nota: Esta seria la tercera Vista donde muestre toda la informacion.... falta alinear los textos
+//************************************************
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/detail_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/image"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/detail_species"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAYAYIN"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        android:padding="1dp"
+        android:textStyle="bold"
+        android:layout_above="@id/detail_status"
+        android:background="#8F2C0817"
+        />
+
+    <TextView
+        android:id="@+id/detail_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALIVE"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        android:padding="1dp"
+        android:textStyle="bold"
+        android:background="#8F2C0817"
+        android:layout_above="@id/detail_originPlanet"/>
+
+    <TextView
+        android:id="@+id/detail_originPlanet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VEGETA"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        android:padding="1dp"
+        android:textStyle="bold"
+        android:layout_above="@id/detail_name"
+        android:background="#8F2C0817"/>
+    <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GOKU UI"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        android:padding="1dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:background="#8F2C0817"/>
+
+</RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
